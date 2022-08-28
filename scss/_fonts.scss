@@ -1,0 +1,52 @@
+@font-face {
+	font-family: "Muller400";
+	src: url("../fonts/MullerRegular.woff2") format("woff2"), url("MullerRegular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Muller500";
+	src: url("../fonts/MullerMedium.woff2") format("woff2"), url("MullerMedium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Muller700";
+	src: url("../fonts/MullerBold.woff2") format("woff2"), url("MullerBold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Muller900";
+	src: url("../fonts/MullerExtraBold.woff2") format("woff2"), url("MullerExtraBold.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "GothamPro500";
+	src: url("../fonts/GothamPro-Medium.woff2") format("woff2"), url("GothamPro-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Roboto700";
+	src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("Roboto-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "ProximaNova600";
+	src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("ProximaNova-Semibold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
