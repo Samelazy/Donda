@@ -84,6 +84,7 @@ main {
 	text-align: center;
 	padding: 0px 30px;
 	display: flex;
+	align-items: center;
 	@media (max-width: 1000px) {
 		font-size: 12px;
 	}
@@ -96,17 +97,18 @@ main {
 	}
 	.hashblock__close {
 		position: relative;
-		width: 10px;
-		height: 10px;
-		margin: 11px 20px 0px 0px;
+		width: 20px;
+		height: 20px;
 		padding: 5px;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.hashblock__close::before,
 	.hashblock__close::after {
 		content: "";
 		position: absolute;
-		top: 0px;
-		left: 0px;
 		height: 20px;
 		width: 4px;
 		background-color: #000;
@@ -498,6 +500,9 @@ button.menu__item:hover {
 .whatisdonda {
 	display: flex;
 	align-items: center;
+	a {
+		color: #f87142;
+	}
 	p {
 		padding-right: 10px;
 	}
@@ -597,6 +602,7 @@ button.menu__item:hover {
 	position: absolute;
 	top: -120px;
 	left: -50px;
+	pointer-events: none;
 	@media (max-width: 1000px) {
 		//transform: scale(0.8);
 		top: -50px;
@@ -819,6 +825,11 @@ button.menu__item:hover {
 		flex-direction: column;
 		flex-basis: 260px;
 		align-items: center;
+		transition: transform 0.5s ease 0s;
+		&:hover {
+			transform: scale(1.02);
+			transition: transform 0.5s ease 0s;
+		}
 		@media (max-width: 1500px) {
 			max-width: 300px;
 		}
@@ -882,6 +893,8 @@ button.menu__item:hover {
 	position: absolute;
 	top: auto;
 	left: auto;
+	z-index: 0;
+	pointer-events: none;
 	@media (max-width: 750px) {
 		transform: scale(0.8);
 	}
@@ -1046,6 +1059,11 @@ button.menu__item:hover {
 		flex-direction: column;
 		align-items: center;
 		flex-basis: 300px;
+		transition: transform 0.5s ease 0s;
+		&:hover {
+			transform: scale(1.02);
+			transition: transform 0.5s ease 0s;
+		}
 		.TokenEconomics__main__item-title {
 			text-align: center;
 			font-family: "Muller700";
@@ -1111,6 +1129,11 @@ button.menu__item:hover {
 			padding: 50px;
 			box-sizing: border-box;
 			margin: 27px 20px 0px 0px;
+			transition: transform 0.5s ease 0s;
+		&:hover {
+			transform: scale(1.02);
+			transition: transform 0.5s ease 0s;
+		}
 			@media (max-width: 1500px) {
 				padding: 30px;
 				height: 250px;
@@ -1284,6 +1307,9 @@ button.menu__item:hover {
 				border-radius: 20px;
 				padding: 9px 55px 5px 55px;
 				margin-top: 24px;
+				&:hover {
+					cursor: pointer;
+				}
 				@media (max-width: 1000px) {
 					font-size: 14px;
 				}
@@ -1736,7 +1762,6 @@ footer {
 	display: flex;
 	position: relative;
 	top: 7px;
-	z-index: 5;
 	@media (max-width: 1350px) {
 		display: none;
 	}
@@ -1750,6 +1775,7 @@ footer {
 	}
 	&-point-active {
 		box-shadow: none;
+		z-index: 11;
 	}
 	&-point:not(last-child) {
 		margin-left: 190px;

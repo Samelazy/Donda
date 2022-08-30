@@ -254,6 +254,8 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   background: -webkit-gradient(linear, left top, left bottom, from(#16161f), to(#1e1e28)) no-repeat;
+  background: -webkit-linear-gradient(#16161f, #1e1e28) no-repeat;
+  background: -o-linear-gradient(#16161f, #1e1e28) no-repeat;
   background: linear-gradient(#16161f, #1e1e28) no-repeat;
 }
 
@@ -295,6 +297,7 @@ main {
   margin-top: -50px;
   opacity: 0;
   -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 
@@ -308,6 +311,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1000px) {
@@ -329,18 +335,25 @@ main {
 
 .hashblock .hashblock__close {
   position: relative;
-  width: 10px;
-  height: 10px;
-  margin: 11px 20px 0px 0px;
+  width: 20px;
+  height: 20px;
   padding: 5px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hashblock .hashblock__close::before,
 .hashblock .hashblock__close::after {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 0px;
   height: 20px;
   width: 4px;
   background-color: #000;
@@ -349,11 +362,13 @@ main {
 
 .hashblock .hashblock__close::before {
   -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 .hashblock .hashblock__close::after {
   -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
@@ -364,6 +379,8 @@ main {
   width: 100%;
   z-index: 50;
   background: -webkit-gradient(linear, left top, left bottom, from(#16161f), to(#1d1d27)) no-repeat;
+  background: -webkit-linear-gradient(#16161f, #1d1d27) no-repeat;
+  background: -o-linear-gradient(#16161f, #1d1d27) no-repeat;
   background: linear-gradient(#16161f, #1d1d27) no-repeat;
 }
 
@@ -406,6 +423,8 @@ main {
 .header__logo .logo_gradient {
   color: #f87142;
   background: -webkit-gradient(linear, left top, left bottom, from(#f87142), to(#fb9654));
+  background: -webkit-linear-gradient(#f87142, #fb9654);
+  background: -o-linear-gradient(#f87142, #fb9654);
   background: linear-gradient(#f87142, #fb9654);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -435,6 +454,7 @@ main {
   width: 100%;
   display: block;
   -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 
@@ -446,6 +466,7 @@ main {
   width: 100%;
   height: 2px;
   -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 
@@ -460,22 +481,27 @@ main {
 .header__burger.burger_active {
   background-color: transparent;
   -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 
 .header__burger.burger_active::before {
   -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 0px;
   -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 
 .header__burger.burger_active::after {
   -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   bottom: 0;
   -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 
@@ -493,6 +519,7 @@ main {
     background: rgba(30, 30, 40, 0.99);
     padding: 50px 35px 150% 35px;
     -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
   }
 }
@@ -547,6 +574,7 @@ main {
 @media (any-hover: hover) {
   .menu__body .menu__list .menu__item:hover .menu__sub-list {
     -webkit-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
     opacity: 1;
     visibility: visible;
@@ -554,8 +582,10 @@ main {
   }
   .menu__body .menu__list .menu__item:hover .menu__arrow {
     -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
             transform: rotate(-180deg);
     -webkit-transition: 0.5s all ease 0s;
+    -o-transition: 0.5s all ease 0s;
     transition: 0.5s all ease 0s;
     color: #fb9553;
   }
@@ -570,6 +600,7 @@ main {
 @media (min-width: 850px) {
   .menu__body .menu__list .menu__item.menu__arrow_hover:hover .menu__sub-list {
     -webkit-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
     opacity: 1;
     visibility: visible;
@@ -577,8 +608,10 @@ main {
   }
   .menu__body .menu__list .menu__item.menu__arrow_hover:hover .menu__arrow {
     -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
             transform: rotate(-180deg);
     -webkit-transition: 0.5s all ease 0s;
+    -o-transition: 0.5s all ease 0s;
     transition: 0.5s all ease 0s;
     color: #fb9553;
   }
@@ -587,12 +620,14 @@ main {
 .menu__body .menu__sub-link:hover {
   color: #fb9553;
   -webkit-transition: all 0.3s 0s;
+  -o-transition: all 0.3s 0s;
   transition: all 0.3s 0s;
 }
 
 .menu__body.burger_active {
   right: -15px;
   -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 
@@ -614,6 +649,7 @@ button.menu__item:hover {
 .nav_href_active {
   color: #fb9553 !important;
   -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
 }
 
@@ -629,6 +665,7 @@ button.menu__item:hover {
   -webkit-box-shadow: 0px -10px 15px #f87142;
           box-shadow: 0px -10px 15px #f87142;
   -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 
@@ -670,8 +707,10 @@ button.menu__item:hover {
   .menu__sub-list {
     opacity: 0;
     -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     -webkit-transform: translate(0px, 10px);
+        -ms-transform: translate(0px, 10px);
             transform: translate(0px, 10px);
     visibility: hidden;
     min-width: 100px;
@@ -697,6 +736,7 @@ button.menu__item:hover {
   color: #fff;
   line-height: 120%;
   -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -723,6 +763,7 @@ button.menu__item:hover {
 .menu__arrow {
   margin: -5px 0px 0px 5px;
   -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   position: relative;
   top: 2px;
@@ -767,6 +808,8 @@ button.menu__item:hover {
   font-size: 36px;
   line-height: 36px;
   color: #f87142;
+  background: -webkit-linear-gradient(300.58deg, #f87142 25.73%, #fb9654 61.66%);
+  background: -o-linear-gradient(300.58deg, #f87142 25.73%, #fb9654 61.66%);
   background: linear-gradient(149.42deg, #f87142 25.73%, #fb9654 61.66%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -848,13 +891,6 @@ button.menu__item:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.bulding__item_buttons-after {
-	display: inline-flex;
-	
-}
-.bulding__item_buttons-after a {
-	color: #f87142;
-}
 
 @media (max-width: 1250px) {
   .building__item_buttons {
@@ -897,6 +933,10 @@ button.menu__item:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.whatisdonda a {
+  color: #f87142;
 }
 
 .whatisdonda p {
@@ -1029,6 +1069,7 @@ button.menu__item:hover {
 @media (max-width: 1450px) {
   .technical__architecture__top__item-logo {
     -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
             transform: scale(0.9);
   }
 }
@@ -1036,6 +1077,7 @@ button.menu__item:hover {
 @media (max-width: 1000px) {
   .technical__architecture__top__item-logo {
     -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
             transform: scale(0.7);
   }
 }
@@ -1043,6 +1085,7 @@ button.menu__item:hover {
 @media (max-width: 500px) {
   .technical__architecture__top__item-logo {
     -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
             transform: scale(0.5);
     margin-top: -20px;
   }
@@ -1052,6 +1095,7 @@ button.menu__item:hover {
   position: absolute;
   top: -120px;
   left: -50px;
+  pointer-events: none;
 }
 
 @media (max-width: 1000px) {
@@ -1112,6 +1156,7 @@ button.menu__item:hover {
 @media (max-width: 450px) {
   .technical__architecture_main-itemsFirst .technical__architecture_main-item:first-child {
     -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
             transform: scale(0.7);
     margin: 0;
   }
@@ -1140,6 +1185,7 @@ button.menu__item:hover {
 @media (max-width: 450px) {
   .technical__architecture_main-itemsFirst .technical__architecture_main-item:last-child {
     -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
             transform: scale(0.7);
     margin-top: -50px;
   }
@@ -1183,6 +1229,7 @@ button.menu__item:hover {
 @media (max-width: 450px) {
   .technical__architecture_main-itemsSecond .technical__architecture_main-item:first-child {
     -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
             transform: scale(0.7);
     margin-top: -50px;
   }
@@ -1217,6 +1264,7 @@ button.menu__item:hover {
 @media (max-width: 450px) {
   .technical__architecture_main-itemsSecond .technical__architecture_main-item:last-child {
     -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
             transform: scale(0.7);
     margin-top: -50px;
   }
@@ -1241,6 +1289,8 @@ button.menu__item:hover {
   font-family: "Muller500";
   color: #f87142;
   background: -webkit-gradient(linear, left top, left bottom, from(#f87142), to(#fb9654));
+  background: -webkit-linear-gradient(#f87142, #fb9654);
+  background: -o-linear-gradient(#f87142, #fb9654);
   background: linear-gradient(#f87142, #fb9654);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1278,6 +1328,7 @@ button.menu__item:hover {
 @media (max-width: 1500px) {
   .technical__architecture_main-item {
     -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
             transform: scale(0.8);
     padding: 30px 0;
   }
@@ -1286,6 +1337,7 @@ button.menu__item:hover {
 @media (max-width: 850px) {
   .technical__architecture_main-item {
     -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
             transform: scale(0.7);
     padding: 20px 0;
   }
@@ -1294,6 +1346,7 @@ button.menu__item:hover {
 @media (max-width: 750px) {
   .technical__architecture_main-item {
     -webkit-transform: scale(1);
+        -ms-transform: scale(1);
             transform: scale(1);
     padding: 20px 0;
   }
@@ -1403,7 +1456,6 @@ button.menu__item:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 5px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1413,8 +1465,23 @@ button.menu__item:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
 }
 
+.dataOracle__item:hover {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
 
 @media (max-width: 1500px) {
   .dataOracle__item {
@@ -1500,11 +1567,14 @@ button.menu__item:hover {
   position: absolute;
   top: auto;
   left: auto;
+  z-index: 0;
+  pointer-events: none;
 }
 
 @media (max-width: 750px) {
   .dataOracle__backimg {
     -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
             transform: scale(0.8);
   }
 }
@@ -1515,19 +1585,13 @@ button.menu__item:hover {
   font-family: "Roboto700";
   color: #000;
   margin: 10px 10px;
-  position: relative;
-  z-index: 2;
+  background: -webkit-linear-gradient(295deg, #f87142, #fb9654);
+  background: -o-linear-gradient(295deg, #f87142, #fb9654);
   background: linear-gradient(155deg, #f87142, #fb9654);
   border-radius: 0px 20px;
   padding: 14px 70px;
-  transition: box-shadow 0.2s ease-in-out 0s ;
   -webkit-box-shadow: 0px 0px 5px 5px #29292d;
           box-shadow: 0px 0px 5px 5px #29292d;
-}
-.dataOracle__button:hover {
-	cursor: pointer;
-	-webkit-box-shadow: 0px 0px 10px 10px #29292d;
-	box-shadow: 0px 0px 10px 10px #29292d;
 }
 
 @media (max-width: 900px) {
@@ -1736,6 +1800,8 @@ button.menu__item:hover {
 
 .TokenEconomics__main__items .TokenEconomics__main__item {
   background: -webkit-gradient(linear, left top, left bottom, from(#1b1b25), to(#1e1e28));
+  background: -webkit-linear-gradient(top, #1b1b25 0%, #1e1e28 100%);
+  background: -o-linear-gradient(top, #1b1b25 0%, #1e1e28 100%);
   background: linear-gradient(180deg, #1b1b25 0%, #1e1e28 100%);
   padding: 50px 30px;
   border-radius: 20px;
@@ -1751,6 +1817,22 @@ button.menu__item:hover {
           align-items: center;
   -ms-flex-preferred-size: 300px;
       flex-basis: 300px;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
+.TokenEconomics__main__items .TokenEconomics__main__item:hover {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
 }
 
 .TokenEconomics__main__items .TokenEconomics__main__item .TokenEconomics__main__item-title {
@@ -1760,6 +1842,8 @@ button.menu__item:hover {
   line-height: 116%;
   color: #f87142;
   background: -webkit-gradient(linear, left top, left bottom, from(#f87142), to(#fb9654));
+  background: -webkit-linear-gradient(#f87142, #fb9654);
+  background: -o-linear-gradient(#f87142, #fb9654);
   background: linear-gradient(#f87142, #fb9654);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1830,6 +1914,8 @@ button.menu__item:hover {
   height: 277px;
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(30.2%, #1b1b25), color-stop(105.25%, #1e1e28));
+  background: -webkit-linear-gradient(bottom, #1b1b25 30.2%, #1e1e28 105.25%);
+  background: -o-linear-gradient(bottom, #1b1b25 30.2%, #1e1e28 105.25%);
   background: linear-gradient(360deg, #1b1b25 30.2%, #1e1e28 105.25%);
   border-radius: 20px;
   display: -webkit-box;
@@ -1845,10 +1931,22 @@ button.menu__item:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 27px 20px 0px 0px;
-  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
 }
+
 .applicationScenarios .applicationScenarious-items .applicationScenarious-item:hover {
-	transform: scale(1.05);
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
 }
 
 @media (max-width: 1500px) {
@@ -1865,6 +1963,8 @@ button.menu__item:hover {
   font-size: 28px;
   line-height: 116%;
   color: #f87142;
+  background: -webkit-linear-gradient(300.58deg, #f87142 0%, #fb9654 100%);
+  background: -o-linear-gradient(300.58deg, #f87142 0%, #fb9654 100%);
   background: linear-gradient(149.42deg, #f87142 0%, #fb9654 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1912,6 +2012,8 @@ button.menu__item:hover {
 .application .applicationScenarious-item {
   height: 277px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(30.2%, #1b1b25), color-stop(105.25%, #1e1e28));
+  background: -webkit-linear-gradient(bottom, #1b1b25 30.2%, #1e1e28 105.25%);
+  background: -o-linear-gradient(bottom, #1b1b25 30.2%, #1e1e28 105.25%);
   background: linear-gradient(360deg, #1b1b25 30.2%, #1e1e28 105.25%);
   -ms-flex-preferred-size: 440px;
       flex-basis: 440px;
@@ -1940,6 +2042,8 @@ button.menu__item:hover {
   font-size: 22px;
   line-height: 116%;
   color: #f87142;
+  background: -webkit-linear-gradient(300.58deg, #f87142 0%, #fb9654 100%);
+  background: -o-linear-gradient(300.58deg, #f87142 0%, #fb9654 100%);
   background: linear-gradient(149.42deg, #f87142 0%, #fb9654 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1994,6 +2098,8 @@ button.menu__item:hover {
   font-size: 48px;
   line-height: 167%;
   padding: 10px;
+  background: -webkit-linear-gradient(300.58deg, #f87142 25.73%, #fb9654 61.66%);
+  background: -o-linear-gradient(300.58deg, #f87142 25.73%, #fb9654 61.66%);
   background: linear-gradient(149.42deg, #f87142 25.73%, #fb9654 61.66%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2034,6 +2140,8 @@ button.menu__item:hover {
 .daowrapper .daoitem__main .daoitem__main-item {
   position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(#1b1b25), color-stop(95.67%, #1e1e28)), -webkit-gradient(linear, left bottom, left top, color-stop(30.2%, #1b1b25), color-stop(105.25%, #1e1e28));
+  background: -webkit-linear-gradient(top, #1b1b25 0%, #1e1e28 95.67%), -webkit-linear-gradient(bottom, #1b1b25 30.2%, #1e1e28 105.25%);
+  background: -o-linear-gradient(top, #1b1b25 0%, #1e1e28 95.67%), -o-linear-gradient(bottom, #1b1b25 30.2%, #1e1e28 105.25%);
   background: linear-gradient(180deg, #1b1b25 0%, #1e1e28 95.67%), linear-gradient(360deg, #1b1b25 30.2%, #1e1e28 105.25%);
   border-radius: 20px;
   padding: 40px 100px 50px 100px;
@@ -2090,16 +2198,16 @@ button.menu__item:hover {
   font-family: "Muller700";
   color: #1d1d27;
   line-height: 167%;
+  background: -webkit-linear-gradient(300.58deg, #f87142 25.73%, #fb9654 61.66%);
+  background: -o-linear-gradient(300.58deg, #f87142 25.73%, #fb9654 61.66%);
   background: linear-gradient(149.42deg, #f87142 25.73%, #fb9654 61.66%);
   border-radius: 20px;
   padding: 9px 55px 5px 55px;
   margin-top: 24px;
-  transition: box-shadow 0.2s ease-in-out 0s;
 }
-.daoitem__main-button:hover {
-	cursor: pointer;
-	-webkit-box-shadow: 0px 0px 10px 10px #29292d;
-	box-shadow: 0px 0px 10px 10px #29292d;
+
+.daowrapper .daoitem__main .daoitem__main-item .daoitem__main-button:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
@@ -2223,6 +2331,7 @@ button.menu__item:hover {
 @media (max-width: 1000px) {
   .investors__wrapper_item-title {
     -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
             transform: scale(0.7);
   }
 }
@@ -2564,6 +2673,8 @@ footer {
 }
 
 .section-slider-title-wrapper span {
+  background: -webkit-linear-gradient(300.58deg, #f87142 25.73%, #fb9654 61.66%);
+  background: -o-linear-gradient(300.58deg, #f87142 25.73%, #fb9654 61.66%);
   background: linear-gradient(149.42deg, #f87142 25.73%, #fb9654 61.66%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2633,15 +2744,15 @@ footer {
 .swiper-container {
   position: relative;
 }
-.swiper-pagination {
-	z-index: initial !important;
-}
+
 .swiper-pagination-progressbar {
   height: 3px !important;
 }
 
 .swiper-pagination-progressbar-fill {
   background: -webkit-gradient(linear, left top, right top, color-stop(1%, transparent), color-stop(0.1, #f87142), color-stop(0.9, #f87142), color-stop(99%, transparent)) !important;
+  background: -webkit-linear-gradient(left, transparent 1%, #f87142 0.1, #f87142 0.9, transparent 99%) !important;
+  background: -o-linear-gradient(left, transparent 1%, #f87142 0.1, #f87142 0.9, transparent 99%) !important;
   background: linear-gradient(to right, transparent 1%, #f87142 0.1, #f87142 0.9, transparent 99%) !important;
   height: 1px !important;
   top: 1px !important;
@@ -2758,6 +2869,8 @@ footer {
   font-size: 18px;
   line-height: 167%;
   color: #242931;
+  background: -webkit-linear-gradient(300.58deg, #f87142 25.73%, #fb9654 61.66%);
+  background: -o-linear-gradient(300.58deg, #f87142 25.73%, #fb9654 61.66%);
   background: linear-gradient(149.42deg, #f87142 25.73%, #fb9654 61.66%);
   border-radius: 60px;
   text-align: right;
@@ -2809,22 +2922,24 @@ footer {
   width: 11px;
   height: 11px;
   border-radius: 50%;
+  background: -webkit-linear-gradient(300.58deg, #f87142 25.73%, #fb9654 61.66%);
+  background: -o-linear-gradient(300.58deg, #f87142 25.73%, #fb9654 61.66%);
   background: linear-gradient(149.42deg, #f87142 25.73%, #fb9654 61.66%);
-
+  -webkit-box-shadow: 0px 0px 10px #fb9654;
+          box-shadow: 0px 0px 10px #fb9654;
 }
 
 .scrollbar__points-point-active {
-		-webkit-box-shadow: 0px 0px 10px #fb9654;
-      box-shadow: 0px 0px 10px #fb9654;
-		position: relative;
-		z-index: 1;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  z-index: 11;
 }
 
 .scrollbar__points-point:not(last-child) {
   margin-left: 190px;
 }
 
-/* .scrollbar__points-point-activesecond {
+.scrollbar__points-point-activesecond {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -2832,4 +2947,4 @@ footer {
 .scrollbar__points-point-activethird {
   -webkit-box-shadow: none;
           box-shadow: none;
-} */
+}
